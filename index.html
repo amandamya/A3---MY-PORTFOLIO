@@ -1,129 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utc-8">
+  <meta charset="utf-8">
   <title>Portfolio Website</title>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  
-<style>
-  
-  body {
-  font-family: Be Vietnam Pro, sans-serif;
-  margin: 0;
-  background-color: 636859;
-  }
-  
-  nav {
-    float: right;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 12px;
-    margin-right: 5%;
-    margin-top: 15px;
-  }
-  
-  nav a{
-    padding: 10px;
-    color: white;
-  }
-  
-  nav a:hover {
-    text-decoration: none;
-    border: 1px solid white; 
-    color: white; 
-    font-weight: bold;
-  }
-  
-  .home-link {
-    float: left;
-    padding: 20px;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-  }
-  
-  #section0{
-    height: 75px;
-    background-color: 636859;
-  }
-  
-  #section1, #section2, #section3, #section4 {
-  height: 600px;  
-  padding: 0px;
-  }
-  
-  .image1 {
-    width: 100%; /* Ensures image fills container */
-    height: auto;
-    display: block;
-  }
-  
-  .image2 {
-    position: absolute;
-    bottom: -50; 
-    left: 50%; 
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    width: 275px;
-  } 
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap" rel="stylesheet">
+
+  <style>
+
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .home-link {
+      position: fixed;
+      top: 0;
+      padding: 40px;
+      left: 0;
+      z-index: 10;
+    }
     
-  .text1 {
-    position: absolute;
-    bottom: -65px; 
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 12px;
-    text-align: center;
+
+    nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 10; 
+      background: none; 
+      padding: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 10px;
+      color: white;
+      font-size: 12px;
+      font-weight: 200;
+    }
+
+    nav a:hover {
+      border: 1px solid white;
+      font-weight: 500;
+    }
+    
+    .nav-line{
+      position: fixed;
+      right: 40px;
+      top: 80px;
+      width: 300px;
+      z-index: 9; 
+    }
+
+    #section1 {
+      position: relative;
+      width: 100%;
+      height: 1100px;
+      background-color: #636859;
+    }
+
+    .image-container {
+      position: absolute;
+      top: -100;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .image1 {
+      width: 100%;
+    }
+
+    .image2 {
+      position: absolute;
+      top: 250px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 350px;
+    }
+
+    .text1 {
+      position: absolute;
+      top: 320px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 12px;
+      text-align: center;
     }
   
-  #section1 {
-    background-color: 636859;
-  }
-  
-  #section2 {
-    background-color: #bbb5a7;
-  }
-    #section3 {
-    background-color: #8b2e25;
-  }
-  
-  
-</style>
+    .image4 {
+    margin-left: 30px;
+    }
+    
+    .text-container {
+      font-size: 12px;
+      text-align: left;
+      font-style: Be Vietnam Pro;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
-
   <a href="#section1" class="home-link">
     <img src="Asset 3.svg" alt="Home" style="width: 20px">
   </a>
-<div id="section0">                                  
-<nav>
-  <a href="#section2" class="nav-link">Get to Know Me</a>
-  <a href="#section3" class="nav-link">Photography</a>
-  <a href="#section4" class="nav-link">Videography</a> 
-</nav>
-                                        
-</div>
+
+  <nav>
+    <a href="#section2" class="nav-link">Get to Know Me</a>
+    <a href="#section3" class="nav-link">Photography</a>
+    <a href="#section4" class="nav-link">Videography</a>
+  </nav>
   
-<div id="section1">
-  <img src="IMG_1292.JPG" width="500px" class="image1">
-  <img src="Amanda Mya.png" width="200px" class="image2">
-  <div class="text1">GBDA STUDENT | YEAR 2</div>
-</div>
+<img src="Line 6.png" class="nav-line" width="200px">
   
-<div id="section2">
-Your amazing content goes here!
-</div>
-  
-<div id="section3">
-Your amazing content goes here!
-</div>
-  
-<div id="section4">
-Your amazing content goes here!
-</div>
-  
+  <div id="section1">
+    <div class="image-container">
+      <img src="IMG_1292.JPG" class="image1" alt="Background Image">
+    </div>
+    <img src="Amanda Mya.png" class="image2">
+    <div class="text1">GBDA STUDENT | YEAR 2</div>
+  </div>
+
+  <div id="section2" style="height: 700px; background-color:#636859;">
+    <img src="Screenshot 2024-12-10 at 6.38.53 PM.png" width=500px class="image4">
+    <div class="text-container">
+   <body>
+      So I love taking photos - it enables me to see the world with intention and with gratitude.
+
+    To me my greatest joy in photography and videography is capturing the simplicity and beauty of people and places at
+    their most authentic moment.
+    </body>
+    </div>
+  </div>
+
+  <div id="section3" style="height: 700px; background-color: white;">
+    <img src="Asset 4-100.jpg" width="500px"
+  </div>
+
+  <div id="section4" style="height: 700px; background-color: #636859;">
+    Your amazing content goes here!
+  </div>
 </body>
 </html>
